@@ -1,0 +1,37 @@
+section {
+    height: 100vh;
+    border: 1px solid #000;
+    text-align: center;
+    letter-spacing: -2px;
+    background-color: #aaa;
+}
+h1 {
+    font-size: 66px;
+    margin-top: 331px;
+}
+a {
+    color: #fff;
+    background-color:#F82F62;
+    width: 256px;
+    height: 80px;
+    display: block;
+    line-height: 80px;
+    font-size: 26px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-bottom: 331px;
+}
+section.m1 {
+    background: url('imge1.jpg') no-repeat center / cover;
+    color: #F82F62;
+}
+section.m2 {
+    background: url('image2.jpg') no-repeat center / cover;
+    color: #fff;
+}
+section.m3 {
+    background: url('image3.jpg') no-repeat center / cover;
+}
+section.m4 {
+    background: url('image4.jpg') no-repeat center / cover;
+}
