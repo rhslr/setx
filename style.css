@@ -1,37 +1,100 @@
-section {
-    height: 100vh;
-    border: 1px solid #000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: black;
     text-align: center;
-    letter-spacing: -2px;
-    background-color: #aaa;
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    font-size: 66px;
-    margin-top: 331px;
-}
-a {
-    color: #fff;
-    background-color:#F82F62;
-    width: 256px;
-    height: 80px;
-    display: block;
-    line-height: 80px;
-    font-size: 26px;
-    border-radius: 40px;
+
+header .header-content {
+    max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 331px;
 }
-section.m1 {
-    background: url('image1.jpg') no-repeat center / cover;
-    color: #F82F62;
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-section.m2 {
-    background: url('image2.jpg') no-repeat center / cover;
-    color: #fff;
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-style: italic;
 }
-section.m3 {
-    background: url('image3.jpg') no-repeat center / cover;
+
+button {
+    width: 120px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
 }
-section.m4 {
-    background: url('image4.jpg') no-repeat center / cover;
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 40px 10px;
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: red;
+    border-radius: 15px;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}   
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+    font-weight: bold;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
 }
